@@ -31,7 +31,7 @@ Below I will provide brief description of files in this repository:
 1. Camera calibration - uses code in calibration.py. Calibration images depict 9x6 chessboard to calculate and return camera coefficients.
 
 ![alt text](./camera_calibration/calibration5.jpg) Original calibration image
-![alt text](./example_images/cal15_undistorted.jpg) Calibration image after undistorting
+![alt text](./example_images/cal5_undistorted.jpg) Calibration image after undistorting
 
 2. Apply a distortion correction to the original image
 
