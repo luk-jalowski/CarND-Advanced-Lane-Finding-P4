@@ -17,11 +17,11 @@ The goals / steps of this project are the following:
 #### Repository 
 
 Below I will provide brief description of files in this repository:
-*lane-lines.py - main file used to load videos and save them after processing
-*pipeline.py - contains functions used for image processing and enhancing
-*calibration.py - constains functions used to calculated camera coefficients from calibration images
-*lane.py - contains Line class used to store information about a line
-*camera.py - contains Camera class that stores info about camera coeffs, etc.
+* lane-lines.py - main file used to load videos and save them after processing
+* pipeline.py - contains functions used for image processing and enhancing
+* calibration.py - constains functions used to calculated camera coefficients from calibration images
+* lane.py - contains Line class used to store information about a line
+* camera.py - contains Camera class that stores info about camera coeffs, etc.
 * .mp4 videos used as input
 * output_images containing videos enhanced in code
 
@@ -50,7 +50,7 @@ Following source and destination points were used to accomplish this:
 
 ![alt text](./example_images/test5_aerial_view.jpg) Birds-eye view on the road in front of the car
 
-4.Use YUV transform to get treshold binary image
+4. Use YUV transform to get treshold binary image
 
 ![alt text](./example_images/test5_binary.jpg) Binary treshold image
 
@@ -68,5 +68,5 @@ Following source and destination points were used to accomplish this:
 
 #### Problems
 
-One problem I noticed with my implementation is that smoothing over few iterations makes lane finding less responsive to dynamically changing lanes. I can be seen on harder_challenge_video_output.mp4 around 0:40 when car gets a little wobbly and detected lanes are a bit above/under where they are in reality. One approach to solve this problem might be to reduce number of iterations used to calculated best fit for current frame. 
-My approach might also struggle in poor light conditions or in pood weather conditions like snow or rain. I think then we would have to use some different sensors to help us stay in the lane.
+* One problem I noticed with my implementation is that smoothing over few iterations makes lane finding less responsive to dynamically changing lanes. I can be seen on harder_challenge_video_output.mp4 around 0:40 when car gets a little wobbly and detected lanes are a bit above/under where they are in reality. One approach to solve this problem might be to reduce number of iterations used to calculated best fit for current frame. 
+* My approach might also struggle in poor light conditions or in pood weather conditions like snow or rain. I think then we would have to use some different sensors to help us stay in the lane.
